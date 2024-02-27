@@ -1,0 +1,31 @@
+body {
+    height: 1000vh;
+}
+
+.header {
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    color: whitesmoke;
+    padding: 0 16px;
+}
+
+.bottom-nav {
+}
+
+.bottom-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0 16px;
+}

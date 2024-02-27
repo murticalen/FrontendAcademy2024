@@ -2,9 +2,16 @@ body {
     height: 1000vh;
 }
 
+.header-container {
+    min-height: 150vh; /* make this 150vh when solving homework */
+    background-color: antiquewhite;
+}
+
 .header {
     padding: 8px 0;
     background-color: darkblue;
+    gap: 24px;
+
 }
 
 .header-button {
@@ -24,6 +31,8 @@ body {
 
 .bottom-nav {
     background-color: whitesmoke;
+    gap: 24px;
+
 
 }
 

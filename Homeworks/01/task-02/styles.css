@@ -3,6 +3,8 @@ body {
 }
 
 .header {
+    padding: 8px 0;
+    background-color: darkblue;
 }
 
 .header-button {
@@ -14,9 +16,15 @@ body {
     background-color: darkblue;
     color: whitesmoke;
     padding: 0 16px;
+    cursor: pointer;
+}
+.header-button:hover {
+    background-color: blue;
 }
 
 .bottom-nav {
+    background-color: whitesmoke;
+
 }
 
 .bottom-nav-button {

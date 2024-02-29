@@ -1,0 +1,47 @@
+body {
+    height: 1000vh;
+}
+
+.header-container {
+    min-height: 15vh; /* make this 150vh when solving homework */
+    background-color: antiquewhite;
+}
+
+.header {
+    padding: 8px 0;
+    background-color: darkblue;
+    gap: 24px;
+
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    color: whitesmoke;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.header-button:hover {
+    background-color: blue;
+}
+
+.bottom-nav {
+    background-color: whitesmoke;
+    gap: 24px;
+
+}
+
+.bottom-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0 16px;
+}

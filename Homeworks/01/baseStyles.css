@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 8px;
+}
+
+.task-link {
+    text-decoration: none;
+    color: wheat;
+    background-color: darkolivegreen;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.next-task {
+    margin-left: auto;
+}
+
+.previous-task {
+    margin-right: auto;
+}

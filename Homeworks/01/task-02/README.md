@@ -1,4 +1,4 @@
-Task 02
+### Task 02 (5 points)
 
 Modify the CSS to accomplish the following things:
 1. Complete the header/bottom nav CSS to make it look like the one on screenshots. It doesn't have to be the exact match, but it should be pretty straightforward. Also, they should take up the whole screen width.
@@ -7,3 +7,5 @@ Modify the CSS to accomplish the following things:
 4. Make the bottom nav always visible on the bottom of the page (on adequate resolutions), just like on screenshots.
 
 You are only allowed to modify the CSS, not the HTML. The only classes you need to change are `.header` and `.bottom-nav` (directly inside already written CSS and by selecting it via media queries).
+
+As you can see on the s

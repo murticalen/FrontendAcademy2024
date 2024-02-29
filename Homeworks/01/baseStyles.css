@@ -2,15 +2,9 @@
     box-sizing: border-box;
 }
 
-.container {
-    height: 350px;
-    width: 350px;
-    border: 1px solid black;
-    margin: 0 8px;
-}
-
 .link-container {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     width: 400px;
     margin-top: 8px;
 }
@@ -24,9 +18,9 @@
 }
 
 .next-task {
-    justify-self: flex-end;
+    margin-left: auto;
 }
 
 .previous-task {
-    justify-self: flex-start;
+    margin-right: auto;
 }

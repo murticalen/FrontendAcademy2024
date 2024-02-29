@@ -1,4 +1,4 @@
-### Task 03 (10 points)
+### Task 03 (5 points)
 
 Your third task is very simple: create a form with the following content:
 
@@ -7,7 +7,7 @@ Your third task is very simple: create a form with the following content:
     * a password
     * and a text sentence.
 * Submit button
-    - [x] but it shouldn't do anything particular, just submit the data to "nowhere" for now.
+    - [x] but it shouldn't do anything particular, just submit the data to "nowhere".
 
 Basically, something like a login form with an additional input. You can find inspiration [here](Facebook_login.png).
 

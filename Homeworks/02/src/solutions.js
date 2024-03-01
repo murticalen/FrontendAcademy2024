@@ -87,7 +87,7 @@ module.exports = {
    * Programmer class has `language` property provided to constructor (and `name` inherited from `Person`) and `getLanguage` method (calls `callGetLanguage` with `language`)
    * Return object with created classes, `return { Person, Programmer }`.
    *
-   * NOTE: class methods should use `bind`, function expression syntax won't work here because code isn't transpiled.
+   * NOTE: class methods should use `bind`, function expression syntax might not work here because code isn't transpiled.
    *
    * @param {Function} callGetName
    * @param {Function} callGetLanguage

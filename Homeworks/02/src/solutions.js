@@ -87,7 +87,7 @@ module.exports = {
 
   /**
    *
-   * EXTRA CREDIT TASK:
+   * EXTRA CREDIT TASK (no points):
    *
    * Create two classes: `Person` and `Programmer`. `Programmer` class extends `Person`.
    * Person class has `name` property (set via constructor) and `getName` method (calls `callGetName` with name`).
@@ -102,9 +102,10 @@ module.exports = {
   classInheritance(callGetName, callGetLanguage) {},
 
   /**
-   * EXTRA CREDIT TASK:
-   *
    * **This is variant of probably most common "big firm" interview question with closures.**
+   *
+   * If you can't find a solution yourself, you can Google and paste it, and try to understand why it works like that.
+   * We will also explain it in the nearest lecture.
    *
    * This task has easier solutions (e.g. using `let` instead of `var`), but desired solutions included Closures.
    *

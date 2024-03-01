@@ -99,7 +99,7 @@ module.exports = {
    *
    * **This is variant of probably most common "big firm" interview question with closures.**
    *
-   * This task has more easier solutions (e.g. using `let` instead of `var`), but desired solutions included Closures.
+   * This task has easier solutions (e.g. using `let` instead of `var`), but desired solutions included Closures.
    *
    * Call the `consumer` function once every second three times giving it loop iterator as argument.
    * Use the provided for loop, do not change for loop, but feel free to modify setTimeout.

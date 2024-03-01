@@ -79,6 +79,13 @@ module.exports = {
   multiplyArrayByTwoNew(numberArray) {},
 
   /**
+   * Returns first `n` Fibonacci numbers in an array. https://en.wikipedia.org/wiki/Fibonacci_sequence
+   * If the n is <= 0, return `undefined`
+   * @param n
+   */
+  fibonacciNumbers(n) {},
+
+  /**
    *
    * EXTRA CREDIT TASK:
    *

@@ -129,6 +129,17 @@ test('multiplyArrayByTwoNew', () => {
   expect(arr).toEqual([1, 2, 3])
 })
 
+test('fibonacciNumbers', () => {
+  expect(f.fibonacciNumbers(-50)).toEqual(undefined)
+  expect(f.fibonacciNumbers(0)).toEqual(undefined)
+  expect(f.fibonacciNumbers(1)).toEqual([0])
+  expect(f.fibonacciNumbers(2)).toEqual([0, 1])
+  expect(f.fibonacciNumbers(3)).toEqual([0, 1, 1])
+  expect(f.fibonacciNumbers(4)).toEqual([0, 1, 1, 2])
+  expect(f.fibonacciNumbers(5)).toEqual([0, 1, 1, 2, 3])
+  expect(f.fibonacciNumbers(6)).toEqual([0, 1, 1, 2, 3, 5])
+})
+
 test('classInheritance', () => {
   const callGetName = jest.fn()
   const callGetLanguage = jest.fn()

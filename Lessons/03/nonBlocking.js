@@ -6,3 +6,5 @@ setTimeout(() => {
 }, 1000)
 
 console.log('End')
+
+// for (let i = 0; i < 4e10; i += 1) {} // cca. 15s on my machine

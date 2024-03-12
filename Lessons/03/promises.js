@@ -15,6 +15,19 @@ function randomNumberInStringPromise() {
 
 const promise = randomNumberInStringPromise();
 
+// function divisibleBy2Promise(numberValue) {
+//   // any work can be wrapped in Promise
+//   return new Promise((resolve, reject) => {
+//     if (numberValue % 2 === 0) {
+//       resolve('Your number is divisible by 2')
+//     } else {
+//       reject('Your number is not divisible by 2')
+//     }
+//   })
+// }
+
+// const divisibleBy2PromiseObject = divisibleBy2Promise(7);
+
   promise
   // then is called when promise is in fulfilled state (resolve is called from promise constructor)
   .then(text => {

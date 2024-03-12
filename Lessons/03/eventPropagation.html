@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Propagation</title>
+</head>
+
+<body>
+  <div id="divElement"
+    style="border: 2px solid rebeccapurple;padding: 20px;max-width: 200px;background-color: pink;cursor: pointer;">
+    <button id="buttonElement"
+      style="border: 2px solid salmon;padding: 20px;background-color: darkkhaki; cursor: pointer;">
+      <a id="linkElement" href="https://www.google.hr">Fancy Text</a>
+    </button>
+  </div>
+
+  <script>
+    // we can get elements once and use them in functions
+    const divElement = document.getElementById('divElement')
+    const buttonElement = document.getElementById('buttonElement')
+    const linkElement = document.getElementById('linkElement')
+    const isPropagationStopped = false
+    const isCaptureMode = false
+
+    function buttonClick(event) {
+      // `currentTarget` property can also be useful.
+      // `currentTarget` is element on which is handler attached (changes depending on handler invoked)
+      // `target` is element which produced event (in our case clicked element, doesn't change)
+      console.log('Button click handler', { event, target: event.target, currentTarget: event.currentTarget })
+
+      // if we stop propagation, other handlers will not be called
+      if (isPropagationStopped) {
+        event.stopPropagation()
+      }
+    }
+
+    function divClick(event) {
+      console.log('Div click handler', { event, target: event.target, currentTarget: event.currentTarget })
+
+      if (isPropagationStopped) {
+        event.stopPropagation()
+      }
+    }
+
+    function linkClick(event) {
+      console.log('Link click handler', { event, target: event.target, currentTarget: event.currentTarget })
+
+      // prevent default behaviour for this element and this event -> don't go to the page
+      event.preventDefault()
+    }
+
+    // register event listeners according to current settings
+    function registerListeners() {
+      // // third argument for `addEventListener` is useCapture boolean -> if true capture mode, if false or not specified bubbling mode
+      buttonElement.addEventListener('click', buttonClick, isCaptureMode)
+      divElement.addEventListener('click', divClick, isCaptureMode)
+      linkElement.addEventListener('click', linkClick, isCaptureMode)
+    }
+
+    registerListeners()
+  </script>
+</body>
+
+</html>

@@ -1,4 +1,3 @@
-import { Browser, Device, DeviceType } from './typescriptModel';
 export enum OperatingSystem {
     Windows = 'windows',
     Linux = 'linux',

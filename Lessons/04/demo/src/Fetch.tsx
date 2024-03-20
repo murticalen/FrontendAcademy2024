@@ -1,37 +1,37 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 interface ResponseItem {
-    name: string
-    url: string
+  name: string
+  url: string
 }
 
 interface PokemonResponse {
-    count: number
-    next: string|null
-    previous: string|null
-    results: ResponseItem[]
+  count: number
+  next: string | null
+  previous: string | null
+  results: ResponseItem[]
 }
 
 export function Fetch() {
-    const [response, setResponse] = useState<PokemonResponse|undefined>(undefined)
+  const [response, setResponse] = useState<PokemonResponse | undefined>(undefined)
 
-    useEffect(() => {
+  useEffect(() => {
 
-        const called = async () => {
-            try {
-                const jsonValue = await (await fetch('https://pokeapi.co/api/v2/pokemon')).json()
-                setResponse(jsonValue)
-            } catch(e) {
-                console.error(e)
-            }
-        }
-
-        called()
-    }, [])
-
-    if (!response) {
-        return null
+    const called = async () => {
+      try {
+        const jsonValue = await (await fetch('https://pokeapi.co/api/v2/pokemon')).json()
+        setResponse(jsonValue)
+      } catch (e) {
+        console.error(e)
+      }
     }
 
-    return <>{response.results[0].name}</>
+    called()
+  }, [])
+
+  if (!response) {
+    return null
+  }
+
+  return <>{response.results[0].name}</>
 }

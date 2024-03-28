@@ -4,6 +4,7 @@ import { Clock } from './Clock'
 import { Counter } from './Counter'
 import { Fetch } from './Fetch'
 import { HelloWorld } from './HelloWorld'
+import { List } from './List'
 
 function App() {
 
@@ -12,15 +13,17 @@ function App() {
 
   return (
     <>
-      <HelloWorld color='orange' transform="uppercase" times={times}>
+      <HelloWorld color='orange' transform='uppercase' times={times}>
         <div>Bla bla bla</div>
         <div>Test test test</div>
-        </HelloWorld>
-        <Counter/>
-        <Counter/>
-        <Fetch/>
-        <div style={{cursor: 'pointer'}} onClick={() => setShowClock(v => !v)}>{showClock ? 'HIDE CLOCK' : 'SHOW CLOCK'}</div>
-        {showClock && <Clock/>}
+      </HelloWorld>
+      <Counter />
+      <Counter />
+      <Fetch />
+      <div style={{ cursor: 'pointer' }}
+           onClick={() => setShowClock(v => !v)}>{showClock ? 'HIDE CLOCK' : 'SHOW CLOCK'}</div>
+      {showClock && <Clock />}
+      <List />
     </>
   )
 }

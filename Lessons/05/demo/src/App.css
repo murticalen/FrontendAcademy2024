@@ -1,0 +1,39 @@
+#root {
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}
+
+.light-theme {
+    --page-color: #EEEEEE;
+    --surface-s1: #F0EEDF;
+    --surface-s2: #FFFFFF;
+    --primary-default: teal;
+    --primary-variant: darkblue;
+    --on-surface-L1: #121212;
+    --on-surface-L2: rgba(18, 18, 18, 0.85);
+}
+
+.dark-theme {
+    --page-color: #232323;
+    --surface-s1: #494643;
+    --surface-s2: #000000;
+    --primary-default: #1ae1e1;
+    --primary-variant: #007fc4;
+    --on-surface-L1: #e0e0e0;
+    --on-surface-L2: rgba(224, 224, 224, 0.85);
+}
+
+.app-header {
+    background-color: var(--surface-s1);
+    color: var(--primary-default);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100vw;
+}
+
+.app-header:hover {
+    color: var(--primary-variant);
+    background-color: var(--page-color);
+}

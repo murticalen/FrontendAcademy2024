@@ -2,4 +2,4 @@ Demonstrate how data can be passed via context by creating `QuestionContext` whi
 
 Context should be declared inside `context` directory.
 
-Provider should be in the same file in which Pokémon details are fetched and the context shall be used in `Question.tsx` file which is inside `modules/Quiz` directory.
+Provider should be in the same file in which Questions are fetched and the context shall be used in `Question.tsx` file which is inside `modules/Quiz` directory.

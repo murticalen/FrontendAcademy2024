@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { Memoization } from './components/Memoization/Memoization'
 import { MemoizedForm } from './components/MemoizedForm'
 import { Question } from './components/Quiz/Question'
 import { Resizeable } from './components/Resizeable'
@@ -48,6 +49,7 @@ function App() {
       </div>
 
       <MemoizedForm />
+      <Memoization/>
       <Resizeable />
       <div style={{ fontSize: '16px', color: 'var(--primary-variant)', marginTop: '8px' }}>Questions and answers:</div>
       {questions.map(v => {

@@ -1,5 +1,6 @@
 import { useIsServer } from "@/hooks/useIsServer";
 import PokemonLink from "@/modules/Links/PokemonLink";
+import { Ref } from "@/modules/Ref/Ref";
 import { GetServerSideProps } from "next";
 
 interface PokemonProps {
@@ -27,6 +28,7 @@ export default function Pokemon(props: PokemonProps) {
         This in an Pokemon page for Sofascore academy. We are showing {props.pokemon.name}.
         {!isServer && ` Its id is ${props.pokemon.id}`}
         <div><PokemonLink id={nextId}>Next pokemon is with id {nextId}</PokemonLink></div>
+        <Ref/>
       </main>
     )
 }

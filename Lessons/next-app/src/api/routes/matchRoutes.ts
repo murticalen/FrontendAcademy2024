@@ -1,0 +1,1 @@
+export const matchDetails = (id: number) => `https://api.sofascore.com/api/v1/event/${id}`

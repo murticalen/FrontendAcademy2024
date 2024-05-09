@@ -1,7 +1,10 @@
-import { useIsServer } from '@/hooks/useIsServer'
-import PokemonLink from '@/modules/Links/PokemonLink'
-import { Ref } from '@/modules/Ref/Ref'
-import { GetServerSideProps } from 'next'
+import MessageContext from "@/context/MessageContext";
+import { useIsServer } from "@/hooks/useIsServer";
+import PokemonLink from "@/modules/Links/PokemonLink";
+import { Portal } from "@/modules/Portal/Portal";
+import { ElementRef } from "@/modules/Ref/ElementRef";
+import { Ref } from "@/modules/Ref/Ref";
+import { GetServerSideProps } from "next";
 
 interface PokemonProps {
   pokemon: {
@@ -23,13 +26,17 @@ export default function Pokemon(props: PokemonProps) {
 
   const nextId = props.pokemon.id + 1
 
-  return (
-    <main>
-      This in an Pokemon page for Sofascore academy. We are showing {props.pokemon.name}.
-      {!isServer && ` Its id is ${props.pokemon.id}`}
-      <div><PokemonLink id={nextId}>Next pokemon is with id {nextId}</PokemonLink></div>
-      <Ref />
-    </main>
+    return (
+      <main>
+        This in an Pokemon page for Sofascore academy. We are showing {props.pokemon.name}.
+        {!isServer && ` Its id is ${props.pokemon.id}`}
+        <div><PokemonLink id={nextId}>Next pokemon is with id {nextId}</PokemonLink></div>
+        <Ref/>
+        <ElementRef mt="36px"/>
+        <MessageContext.Provider value={{message: props.pokemon.name}}>
+          <Portal/>
+        </MessageContext.Provider>
+      </main>
   )
 }
 

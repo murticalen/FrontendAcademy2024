@@ -15,6 +15,8 @@ export const fetcher = (...args) =>
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <SWRConfig value={{ fetcher }}><Component {...pageProps} /></SWRConfig>
+    <SWRConfig value={{ fetcher }}>
+      <Component {...pageProps} />
+    </SWRConfig>
   )
 }

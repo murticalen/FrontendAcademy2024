@@ -37,19 +37,7 @@ const theme = createTheme({
     md: "16px",
     lg: "20px",
     xl: "24px",
-  },
-  components: {
-    Box: {
-      defaultProps: {
-        color: "colors.onSurface.nLv1",
-      },
-    },
-    Text: {
-      defaultProps: {
-        color: "colors.onSurface.nLv1",
-      }
-    }
-  },
+  }
 });
 
 type UserTheme = typeof theme;

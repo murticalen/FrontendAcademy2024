@@ -1,4 +1,3 @@
-
 interface PrivacyPolicyProps {
   partnersCount: number
 }

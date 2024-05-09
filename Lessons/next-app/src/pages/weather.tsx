@@ -3,7 +3,7 @@ import { styled } from '@kuma-ui/core'
 import { GetServerSideProps } from 'next'
 
 const H1 = styled.h1`
-  color: t("colors.primary");
+    color: t("colors.primary");
 `
 
 const Main = styled.main`
@@ -16,14 +16,14 @@ const Main = styled.main`
 export default function Weather() {
   return (
     <Main>
-      <WeatherApp/>
+      <WeatherApp />
     </Main>
   )
 }
 
 // NOTE: THIS MAKES THE PAGE SERVER-SIDE RENDERED DESPITE BEING STATIC IN CONTENT
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    return {
-        props: {},
-    };
-};
+  return {
+    props: {},
+  }
+}

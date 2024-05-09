@@ -1,15 +1,15 @@
 export interface CityLocation {
-    position: string
-    distance: number
+  position: string
+  distance: number
 }
 
 export interface CityWeather {
-    temp: number
-    type: 'sunny'|'rainy'
+  temp: number
+  type: 'sunny' | 'rainy'
 }
 
 export interface CityData {
-    name: string
-    location: CityLocation
-    weather: CityWeather
+  name: string
+  location: CityLocation
+  weather: CityWeather
 }

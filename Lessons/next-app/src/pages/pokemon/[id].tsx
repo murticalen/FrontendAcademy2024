@@ -1,5 +1,8 @@
+import MessageContext from '@/context/MessageContext'
 import { useIsServer } from '@/hooks/useIsServer'
 import PokemonLink from '@/modules/Links/PokemonLink'
+import { Portal } from '@/modules/Portal/Portal'
+import { ElementRef } from '@/modules/Ref/ElementRef'
 import { Ref } from '@/modules/Ref/Ref'
 import { GetServerSideProps } from 'next'
 
@@ -29,6 +32,10 @@ export default function Pokemon(props: PokemonProps) {
       {!isServer && ` Its id is ${props.pokemon.id}`}
       <div><PokemonLink id={nextId}>Next pokemon is with id {nextId}</PokemonLink></div>
       <Ref />
+      <ElementRef mt='36px' />
+      <MessageContext.Provider value={{ message: props.pokemon.name }}>
+        <Portal />
+      </MessageContext.Provider>
     </main>
   )
 }

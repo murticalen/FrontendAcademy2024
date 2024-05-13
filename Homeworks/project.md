@@ -181,7 +181,7 @@ Suggested free deployment providers are:
 
 ## Deadline
 
-The deadline for the project is June 9th, 9AM.
+The deadline for the project is June 10th, 9AM.
 
 I suggest you to finish the mandatory tasks as soon as possible, since there are few of them, to make sure you pass the academy. And after you have finished them, add everything else later as a cherry on top.
 

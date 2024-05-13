@@ -163,9 +163,9 @@ User stories are bellow: Stories in the **bold** are required, stories in the _i
 
 ## API
 
-Applications should use the API designed for this project, the documentation for which is available [on this link](https://academy.dev.sofascore.com/api/docs). The documentation contains the list of all routes and docs for what each route returns. API basename is `https://academy.dev.sofascore.com`.
+Applications should use the API designed for this project, the documentation for which is available [on this link](https://academy-backend.sofascore.dev/api/docs). The documentation contains the list of all routes and docs for what each route returns. API basename is `https://academy-backend.sofascore.dev`.
 
-For example, route to fetch all sports described [here](https://academy.dev.sofascore.com/api/docs#tag/Sport/operation/get_app_sports) is `https://academy.dev.sofascore.com/sports`.
+For example, route to fetch all sports described [here](https://academy-backend.sofascore.dev/api/docs#tag/Sport/operation/get_app_sports) is `https://academy-backend.sofascore.dev/sports`.
 
 ## Deployment
 

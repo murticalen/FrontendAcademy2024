@@ -1,18 +1,9 @@
+import { useThemeContext } from '@/context/ThemeContext'
 import { Box, Button } from '@kuma-ui/core'
 import Head from "next/head";
-import { useEffect, useState } from 'react'
 
 export default function Home() {
-
-  const [isDark, setIsDark] = useState(false)
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isDark])
+  const {setIsDark} = useThemeContext()
 
   return (
     <>

@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import { ThemeContextProvider } from '@/context/ThemeContext'
 import type { AppProps } from 'next/app'
 import { SWRConfig } from 'swr'
 
@@ -16,7 +17,9 @@ export const fetcher = (...args) =>
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <SWRConfig value={{ fetcher }}>
-      <Component {...pageProps} />
+      <ThemeContextProvider>
+        <Component {...pageProps} />
+      </ThemeContextProvider>
     </SWRConfig>
   )
 }

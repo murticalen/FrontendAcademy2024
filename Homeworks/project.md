@@ -1,4 +1,4 @@
-# Sofascore Frontend Academy 2023 - Project
+# Sofascore Frontend Academy 2024 - Project
 
 Sofascore Academy final project includes all knowledge and skills that you gathered during all lectures and homeworks. Additionally, through implementation of Sofascore models and functionalities it brings the Sofascore domain closer to you.
 The goal of the final project is to implement a mini Sofascore application, which has all the main elements from Sofascore, but with much fewer details and data.

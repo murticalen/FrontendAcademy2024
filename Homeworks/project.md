@@ -37,7 +37,7 @@ If you want to personalize your project, the easiest way would be to create your
 
 ## Checkpoints
 
-There will be one mandatory checkpoint between May 25th and 29th or on June 6th or 7th. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if I am present there.
+There will be one mandatory checkpoint between May 27th and 31st. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if I am present there.
 
 Feel free to contact me on Slack when you've added something new, have a question, and we can discuss it on a call or live.
 
@@ -51,7 +51,7 @@ In this chapter, I will first describe the basic entities used and their connect
 Basic entities are:
 
 - **Sport** - Entity describing a sport - unlike other entities which are referenced by id, sport is referenced by its `slug` property, e.g. football, american-football
-- **Tournament** - Entity describing single competition (can be league, cup, ...). Examples of tournaments: English Premier League, Uefa Champions League , Roland Garros, ...
+- **Tournament** - Entity describing single competition (a league, a cup, ...). Examples of tournaments: English Premier League, Uefa Champions League , Roland Garros, ...
 - **Event** - Event is an entity representing a single match. Events are usually displayed as a part of event lists from where users can choose a single event and get its details. Examples of an event: Real Madrid - Barcelona, Dinamo - Hajduk, ...
 - **Team** - Competitor in an event, i.e. a club, national team or a tennis player. E.g. Bayern Munich, Croatia (football), Croatia (basketball).
 

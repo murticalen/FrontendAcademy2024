@@ -7,7 +7,7 @@ interface ContextValue {
 
 const ThemeContext = createContext<ContextValue>({} as ContextValue)
 
-export const ThemeContextProvider = ({children}: PropsWithChildren) => {
+export const ThemeContextProvider = ({ children }: PropsWithChildren) => {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
@@ -18,17 +18,13 @@ export const ThemeContextProvider = ({children}: PropsWithChildren) => {
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove('dark')
     }
   }, [isDark])
 
-  return (
-    <ThemeContext.Provider value={{isDark, setIsDark}}>
-      {children}
-    </ThemeContext.Provider>
-  )
+  return <ThemeContext.Provider value={{ isDark, setIsDark }}>{children}</ThemeContext.Provider>
 }
 
 export const useThemeContext = () => useContext(ThemeContext)

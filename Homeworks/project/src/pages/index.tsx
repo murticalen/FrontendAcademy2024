@@ -1,9 +1,13 @@
 import { useThemeContext } from '@/context/ThemeContext'
 import { Box, Button } from '@kuma-ui/core'
 import Head from 'next/head'
+import useSWR from 'swr'
 
 export default function Home() {
   const { setIsDark } = useThemeContext()
+  const {data, error} = useSWR('/api/sports')
+
+  console.log(data, error)
 
   return (
     <>

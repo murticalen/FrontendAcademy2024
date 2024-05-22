@@ -4,7 +4,7 @@ import { withKumaUI } from '@kuma-ui/next-plugin'
 const nextConfig = {
   reactStrictMode: false,
   rewrites: async () => {
-    return [{ source: '/api/:path', destination: 'https://academy-backend.sofascore.dev/:path*' }]
+    return [{ source: '/api/:path*', destination: 'https://academy-backend.sofascore.dev/:path*' }]
   },
 }
 

@@ -1,7 +1,10 @@
 import { useThemeContext } from '@/context/ThemeContext'
 import { Box, Button } from '@kuma-ui/core'
+import { AnimatePresence, motion } from 'framer-motion'
 import Head from 'next/head'
 import useSWR from 'swr'
+
+const MotionBox = motion(Box)
 
 export default function Home() {
   const { setIsDark } = useThemeContext()
@@ -21,6 +24,12 @@ export default function Home() {
         </Box>
         <Button onClick={() => setIsDark(v => !v)}>Toggle theme</Button>
       </Box>
+      <AnimatePresence>
+        <MotionBox              initial={{ opacity: '0', transitionDuration: '0.5s' }}
+                                animate={{ opacity: '1' }}>
+          This is animated
+        </MotionBox>
+      </AnimatePresence>
     </>
   )
 }
